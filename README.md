@@ -1,2 +1,3 @@
-# side-hustle
-Side Hustle - BETA
+# Side Hustle - BETA
+
+Side Hustle, beta version.
