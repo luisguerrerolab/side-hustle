@@ -1,7 +1,7 @@
 baseurl: '/side-hustle'
 exclude: ['README.md']
 permalink: pretty
-title: 'Construye tu Riqueza Personal'
+title: 'Normalicemos el ahorro'
 
 google_analytics_id: ""
 homepage:
@@ -14,11 +14,11 @@ footer:
   copyright_text: 'Hecho con <a href="https://jekyllrb.com">Jekyll</a>. | Diseño por <a href="https://github.com/JugglerX">Robert Austin</a>. | Ilustraciones por <a href="https://www.pixeltrue.com/about">Pixel True</a>.'
 
 seo:
-  meta_og_title: "Tu Mejor Decisión Financiera"
+  meta_og_title: "Normalicemos el ahorro"
   meta_og_type: "website"
-  meta_og_url: "https://jekyll-serif-theme.netlify.app"
-  meta_og_image: "https://raw.githubusercontent.com/zerostaticthemes/jekyll-serif-theme/master/screenshots/tn.png"
-  meta_og_description: "Jekyll Serif is a modern business theme for Hugo. It contains content types for the archetypical business website. The theme is fully responsive, blazing fast and artfully illustrated."
+  meta_og_url: "normalicemoselahorro.com"
+  meta_og_image: ""
+  meta_og_description: "Toma tu mejor decisión financiera. Elimina el ruido y decide lo que tiene más sentido para ti."
   meta_twitter_card: "summary"
   meta_twitter_site: "@luisguerrerolab"
   meta_twitter_creator: "@luisguerrerolab"
