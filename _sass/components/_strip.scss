@@ -6,10 +6,16 @@
   background-color: white;
 }
 .strip-grey {
-  background-color: #d7f6f6;
-//   p {
-//       color: #ffffff;
-//   }
+  background-color: $primary;
+  p {
+      color: #ffffff;
+  }
+  h2 {
+      color: #ffffff;
+  }
+  h3 {
+      color: #ffffff;
+  }
 }
 .strip-diagonal {
   transform: skewY(5deg);
