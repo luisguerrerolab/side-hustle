@@ -1,17 +1,32 @@
 [
-  {
-    "title": "Paso 1: cuéntame tu historia",
-    "description": "New clients receive an obligation free consultation.",
-    "image": "images/features/noun_branding_1885335.svg"
-  },
-  {
-    "title": "Paso 2: la preparación",
-    "description": "All members of our team are certified accountants.",
-    "image": "images/features/noun_The Process_1885341.svg"
-  },
-  {
-    "title": "Paso 3: la sesión",
-    "description": "We stay up to date on the latest changes to the tax code.",
-    "image": "images/features/noun_3d modeling_1885342.svg"
-  }
+    {
+        "title": "Mi mejor inversión",
+        "description": "Elige el estilo de inversión que mejor vaya con tu personalidad.",
+        "image": "images/features/1st-investment.svg"
+    },
+    {
+        "title": "Cómo aprovechar mis ahorros",
+        "description": "Si estás planeando una compra, ahorrando para imprevistos o sólo estás guardando el dinero que te sobra cada mes, elige un servicio que te pague por ahorrar.",
+        "image": "images/features/grow-savings.svg"
+    },
+    {
+        "title": "Cambiar mi tarjeta de crédito",
+        "description": "Hay una para cada gusto y personalidad. Elige la que te dé los mejores beneficios para tu estilo de gastos.",
+        "image": "images/features/credit-card.svg"
+    },
+    {
+        "title": "Cambiar de banco",
+        "description": "Ni compras mínimas ni saldos promedio. Usa tu banco con tus propios términos y escoge tú el que más te conviene.",
+        "image": "images/features/change-bank.svg"
+    },
+    {
+        "title": "Comprar o rentar",
+        "description": "Descubre si comprar una casa o un coche es la mejor opción para ti.",
+        "image": "images/features/rent-or-buy.svg"
+    },
+    {
+        "title": "Cómo planear mi retiro",
+        "description": "Construye una estrategia para tu retiro mientras disfrutas gastar hoy sin culpa.",
+        "image": "images/features/retirement.svg"
+    }
 ]

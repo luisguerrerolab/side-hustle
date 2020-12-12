@@ -3,75 +3,279 @@ title: Tu Mejor Decisión Financiera - Home
 layout: default
 bodyClass: page-home
 ---
-
 <div class="intro">
-  <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        {{ content }}
-        {% if site.homepage.show_call_box %}
-          {% include call.html show_button=true %}
-        {% endif %}
-      </div>
-      {% if page.intro_image %}
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt={{ page.title }} class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
-      </div>
-      {% endif %}
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+                {{ content }}
+                <a class="button button-primary" href="#lets-get-it-done">Cuéntame tu historia hoy</a>
+            </div>
+            {% if page.intro_image %}
+            <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+                <img alt={{ page.title }}
+                    class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}"
+                    src="{{ page.intro_image | relURL }}" />
+            </div>
+            {% endif %}
+        </div>
     </div>
-  </div>
 </div>
 
-<div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-center">
-      <!-- {% for service in site.services %}
-      <div class="col-12 col-md-4 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{site.baseurl}}{{ service.url }}">{{ service.title }}</a>
-            </h2>
-            <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
-          </div>
+<div class="strip strip-grey">
+    <div class="container pt-6 pb-6 pb-md-6">
+        <div class="row justify-content-center mb-6">
+            <div class="col-auto">
+                <h2>Normalicemos hablar de dinero</h2>
+            </div>
         </div>
-      </div>
-      {% endfor %} -->
-      <div class="col-auto">
-          <h2 class="mx-auto">Muchas opciones, mucho ruido.</h2>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <p>Hola</p>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 position-relative">
+                <img alt={{ page.title }}
+                    class="intro-image {% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}"
+                    src="{{ page.space-image | relURL }}" />
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-8">
+                <p>Para la mayoría de nosotros, tomar una decisión financiera es como enfrentar un <strong>terreno nunca antes explorado</strong>.</p>
+                <p>Preguntar a nuestros conocidos cómo aprendieron a manejar su dinero es la manera más rápida de ponerlos incómodos. Algunos hasta admitirán que todavía no han aprendido. Intentarán darnos algunos consejos, pero al final nos dejarán en el mismo lugar, con indecisión y mucha inseguridad.</p>
+                <p>Cuando decidimos explorar por nuestra cuenta, leyendo un libro de finanzas por aquí o algunos videos en YouTube por allá, descubrimos que hay una inmensidad de nuevas palabras y siglas que aparentemente debemos entender: interés compuesto, ganancia real, tasa nominal, CAT, rendimiento anualizado... ¡Uf! Ahora es cuando sufrimos parálisis por análisis.</p>
+                <p>La buena noticia es que <strong>no tienes que conocer ni entender a detalle cada uno de ellos</strong>. Juntos, nos enfocaremos en la información que realmente debes considerar para tomar tu mejor decisión con tranquilidad.</p>
+                <p><strong>Si llegaste hasta aquí, el primer gran paso ya lo diste.</strong></p>
+            </div>
         </div>
     </div>
-    <!-- <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{site.baseurl}}/services">View All Services</a>
-      </div>
-    </div> -->
-  </div>
 </div>
 
 {% if site.data.features %}
-<div class="strip strip-grey">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-    <div class="row justify-content-center">
-
-      {% for feature in site.data.features %}
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          {% if feature.image %}
-          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image | relative_url }}" /></div>
-          {% endif %}
-          <h2 class="feature-title">{{ feature.title }}</h2>
-          <div class="feature-content">{{ feature.description }}</div>
+<div class="strip">
+    <div class="container pb-6 pt-md-6 pb-md-10">
+        <div class="row justify-content-center mb-6">
+            <div class="col-auto">
+                <h2>Ordena tus finanzas personales, una decisión a la vez.</h2>
+            </div>
         </div>
-      </div>
-      {% endfor %}
 
+        <div class="row justify-content-center">
+
+            {% for feature in site.data.features %}
+            <div class="col-12 col-md-6 col-lg-4 mb-2">
+                <div class="feature">
+                    {% if feature.image %}
+                    <div class="feature-image"><img alt="{{ feature.title }} logo"
+                            src="{{ feature.image | relative_url }}" /></div>
+                    {% endif %}
+                    <h3 class="feature-title">{{ feature.title }}</h3>
+                    <div class="feature-content">{{ feature.description }}</div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
     </div>
-  </div>
 </div>
 {% endif %}
+
+<div class="strip strip-grey">
+    <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+        <div class="row justify-content-center mb-6">
+            <div class="col-auto">
+                <h2>¿Cómo Funciona?</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="media">
+                    <img class="align-self-start" src="{{ page.research-image }}" alt="1. Cuéntame tu historia" style="width:250px; height:250px; margin-top:-40px;">
+                    <div class="media-body">
+                        <h3 class="mt-0">1. Cuéntame tu historia</h3>
+                        <p>
+                            Envíame un email contándome sobre la decisión que estás por tomar y yo te escribiré de vuelta
+                            inmediatamente. Agendaremos un espacio para nuestra sesión en un horario que funcione para ti,
+                            usualmente dentro de los proxímos días.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="media">
+                    <div class="media-body">
+                        <h3 class="mt-0">2. La Preparación</h3>
+                        <p>
+                            Te enviaré algunos ejercicios para completar antes de nuestra sesión. No serán complicados y nos
+                            ayudarán a preparar la información que necesitamos para tomar la mejor decisión.
+                        </p>
+                    </div>
+                    <img class="align-self-start" src="{{ page.prepare-image }}" alt="2. La Preparación" style="width:250px; height:250px; margin-top:-40px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="media">
+                    <img class="align-self-start" src="{{ page.session-image }}" alt="3. La Sesión" style="width:250px; height:250px; margin-top:-40px;">
+                    <div class="media-body">
+                        <h3 class="mt-0">3. La Sesión</h3>
+                        <p>
+                            Tendremos una videollamada en el espacio agendado. Repasaremos tus preocupaciones y los ejercicios
+                            en los que trabajaste. Discutiremos las opciones que tienes en mente y yo haré muchísimas preguntas.
+                            A diferencia de tus familiares o amigos, yo tengo una perspectiva completamente neutral, así que te
+                            compartiré objetivamente la decisión que tiene más sentido para ti.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="strip">
+    <div class="container pt-6 pb-6 pb-md-10">
+        <div class="row justify-content-center mb-6">
+            <div class="col-auto">
+                <h2>Esta sesión es para ti si...</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-8">
+                <ul>
+                    <li>Ya has buscado diferentes opciones, pero necesitas decidirte por una ya y avanzar con tu vida.</li>
+                    <li>Te has cansado de recibir un servicio pésimo de bancos y otros servicios financieros y quieres asegurarte de tomar la mejor decisión para ti, no para ellos.</li>
+                    <li>Crees con firmeza que tú eres responsable de construir tu propio destino, a través de las decisiones que tomas a diario.</li>
+                    <li>Eres una persona dispuesta a tomar acción y a salir de tu zona de comfort.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-6 mb-6">
+            <div class="col-auto">
+                <h2>Esta sesión NO es para ti si...</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-8">
+                <ul>
+                    <li>Buscas atajos para hacerte rico (sin esforzarte). Construir tu propia riqueza requiere un estilo de vida sostenible y mucha paciencia.</li>
+                    <li>No tienes la disposición para cambiar tus hábitos.</li>
+                    <li>Crees que tu situación financiera actual es pura mala suerte.</li>
+                    <li>Tienes deudas grandes, pero prefieres invertir tu dinero. Tu primera misión es pagarlas por completo.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if site.data.faq %}
+<div class="strip strip-grey">
+    <div class="container pt-6 pt-md-3 pb-5 pb-md-10">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 position-relative">
+                <img alt={{ page.title }}
+                    class="intro-image {% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}"
+                    src="{{ page.faq-image | relURL }}" />
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <h2>Preguntas Más Frecuentes</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-8">
+                {% for question in site.data.faq %}
+                    <h3 class="pt-5 pt-md-5">{{ question.title }}</h3>
+                    {{ question.answer }}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<div class="strip">
+    <div class="container pt-6 pb-6 pt-md-10">
+        <div class="row justify-content-center mb-6">
+            <div class="col-auto" id="lets-get-it-done">
+                <h2>¿Agendamos una sesión?</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h3>Formas de pago</h3>
+                <p>Una sesión cuesta $549 y puede pagarse con tarjeta de crédito/débito o transferencia bancaria, dentro de las 24 horas posteriores al final de nuestra sesión.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Privacidad</h3>
+                <p>Tu nombre, historia y toda nuestra sesión serán completamente confidenciales. Jamás compartiré tu información sin tu permiso expreso. Tu privacidad está garantizada.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="intro" style="padding-top: 0;">
+    <div class="container">
+        <div class="row justify-content-center pb-6">
+            <div class="col-auto">
+                <h3>Escríbeme hoy y averigua cómo sacarle el mejor provecho a tu dinero.</h3>
+            </div>
+        </div>
+        <div class="row justify-content-start pt-6">
+            <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+                <form
+                    action="https://formspree.io/f/mjvpayrd"
+                    method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputName">Tu nombre:</label>
+                            <input type="text" class="form-control" id="inputName" name="_firstname">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputLastName">Tu apellido:</label>
+                            <input type="text" class="form-control" id="inputLastName" name="_lastname">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail4">Tu correo electrónico:</label>
+                        <input type="email" class="form-control" id="inputEmail4" name="_replyto">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Cuéntame un poco más sobre la decisión que estás tratando de tomar:</label>
+                        <textarea class="form-control" name="message" id="inputMessage" rows="6"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputBookingTime">Sugiere un día y hora para nuestra sesión:</label>
+                        <input type="text" class="form-control" id="inputBookingTime" name="_suggestedBookingTime">
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="col-auto">
+                            <button type="submit" class="button button-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+                <img alt={{ page.title }}
+                    class="intro-image intro-image-absolute"
+                    src="{{ page.control-your-money-image | relURL }}" />
+            </div>
+        </div>
+    </div>
+</div>

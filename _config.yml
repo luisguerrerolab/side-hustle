@@ -11,7 +11,7 @@ logo:
   desktop: "images/logo/logo.svg"
   desktop_height: "36px"
 footer:
-  copyright_text: 'Diseño por <a class="zerostatic" href="https://github.com/JugglerX">Robert Austin</a>. Construido con Jekyll.'
+  copyright_text: 'Hecho con <a href="https://jekyllrb.com">Jekyll</a>. | Diseño por <a href="https://github.com/JugglerX">Robert Austin</a>. | Ilustraciones por <a href="https://www.pixeltrue.com/about">Pixel True</a>.'
 
 seo:
   meta_og_title: "Tu Mejor Decisión Financiera"
@@ -25,7 +25,7 @@ seo:
 
 collections:
   services:
-    output: true
+    output: false
   team:
     output: true
 

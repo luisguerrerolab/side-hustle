@@ -1,12 +1,18 @@
 .header {
-  color: $primary;
-  background-color: #ffffff;
+  color: $speed;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
-  border-bottom: 1px solid $white-offset;
-  padding: 10px 0px;
+  box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
+  border-bottom: 1px solid $primary;
+  padding: 20px;
+  h1 {
+    color: $primary;
+    font-family: $font-family-base;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
   .container {
     display: flex;
     justify-content: space-between;

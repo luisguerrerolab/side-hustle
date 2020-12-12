@@ -2,7 +2,7 @@ a {
   color: $primary;
 }
 p {
-  line-height: 26px;
+  line-height: 28px;
   color: $steel;
   font-family: $font-family-base;
   margin-bottom: 20px;
@@ -12,8 +12,9 @@ h1 {
   font-family: $font-family-heading;
   line-height: 1.2;
   margin-bottom: 20px;
+  color: $primary;
   @include media-breakpoint-up(md) {
-    font-size: 32px;
+    font-size: 46px;
     line-height: 1.2;
   }
 }
@@ -22,16 +23,19 @@ h2 {
   font-family: $font-family-heading;
   line-height: 1.4;
   margin-bottom: 10px;
+  color: $primary;
   @include media-breakpoint-up(md) {
-    font-size: 26px;
+    font-size: 30px;
     line-height: 1.4;
   }
 }
 h3 {
   font-size: 16px;
+  font-family: $font-family-heading;
   line-height: 1.4;
+  color: $black;
   @include media-breakpoint-up(md) {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.4;
   }
 }

@@ -3,14 +3,19 @@ title: Tu Mejor Decisión Financiera
 layout: home
 description: Decide y avanza tranquilo.
 intro_image: "images/illustrations/save-money.svg"
+space-image: "images/illustrations/space-discovery.svg"
+relax-image: "images/illustrations/relax.svg"
+research-image: "images/illustrations/research.svg"
+session-image: "images/illustrations/session.svg"
+prepare-image: "images/illustrations/prepare.svg"
+control-your-money-image: "images/illustrations/control-your-money.svg"
+faq-image: "images/illustrations/faq.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-# Headline empático y positivo.
+## ¿Te atoraste buscando la mejor opción para tus ahorros?
 
-¿Quieres contratar un servicio financiero, pero estás paralizado por la cantidad de opciones? ¿Tienes miedo de elegir la opción incorrecta y desperdiciar tu dinero?
+Cuéntame hoy tu historia. En una sola sesión yo te ayudaré a eliminar la incertidumbre. Reduciremos toda la información a los detalles esenciales, elegirás tu mejor opción y hasta planearás tus siguientes pasos.
 
-Cuéntame hoy tu historia. En sólo una sesión ($390) sin límite de tiempo yo te ayudaré a eliminar el ruido. Escucharé tus intereses y nos enfocaremos únicamente en la información esencial que necesitas para elegir la opción que más te convenga.
-
-Toma tu mejor decisión financiera y avanza tranquilo.
+Al final de la sesión, terminarás con alivio y energía para seguir adelante con la decisión correcta.
