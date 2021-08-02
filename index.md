@@ -1,5 +1,5 @@
 ---
-title: Normalicemos el ahorro y toma tu mejor decision financiera.
+title: Toma tu mejor decisión financiera.
 layout: home
 description: Decide y avanza con tranquilidad.
 intro_image: "images/illustrations/save-money.svg"
