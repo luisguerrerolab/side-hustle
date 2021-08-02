@@ -1,5 +1,10 @@
 [
   {
+    "name": "Email",
+    "link": "mailto:luis@normalicemoselahorro.com",
+    "image": "images/social/envelope_fill.svg"
+  },
+  {
     "name": "Twitter",
     "link": "https://twitter.com/luisguerrerolab",
     "image": "images/social/twitter.svg"
