@@ -10,8 +10,11 @@
   h1 {
     color: $primary;
     font-family: $font-family-base;
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 0;
+    @include media-breakpoint-up(sm) {
+      font-size: 30px;
+    }
   }
   .container {
     display: flex;
